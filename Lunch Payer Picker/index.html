@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's Buying Lunch?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lunch Picker</h1>
+        <p>Click the button below to find out who will buy lunch today:</p>
+        <button onclick="displayLunchBuyer()">Who’s Buying Lunch?</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function whoIsBuyingLunch(names) {
+            const randomIndex = Math.floor(Math.random() * names.length);
+            const selectedPerson = names[randomIndex];
+            return `${selectedPerson} is going to buy lunch today!`;
+        }
+
+        function displayLunchBuyer() {
+            const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+            const result = whoIsBuyingLunch(names);
+            document.getElementById("result").textContent = result;
+        }
+    </script>
+
+</body>
+</html>

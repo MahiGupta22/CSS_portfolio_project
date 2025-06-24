@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Mahi's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #1E1F26;
+      color: #EEEEEE;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #2C2E3A;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #FFD369;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #EEEEEE;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #FFD369;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #FFD369;
+      margin: 30px 0;
+    }
+
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    main p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container a {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .container a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(255, 211, 105, 0.3);
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2C2E3A;
+      margin-top: 30px;
+    }
+
+    footer a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #FFD369;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mahi's Portfolio</h1>
+    <h2>I'm learning JS..</h2>
+    <nav>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr/>
+
+  <main id="projects">
+    <h2>JAVASCRIPT PROJECTS:</h2>
+    <p>Click on the images to get to different project pages!</p>
+    <div class="container">
+      <a href="./Simon Game Challenge Completed/index.html">
+        <img src="./images/Screenshot (31).png" alt="SIMON GAME CHALLENGE WEBSITE PREVIEW">
+      </a>
+      <a href="./shoes ecommerce/index.html">
+        <img src="./images/Screenshot (30).png" alt="SHOE ECOMMERCE PREVIEW">
+      </a>
+      <a href="./flight-reservation-system/index.html">
+        <img src="./images/Screenshot (28).png" alt="FLIGHT RESERVATION SITE PREVIEW">
+      </a>
+      <a href="./Drum Kit Completed/index.html">
+        <img src="images/Screenshot (27).png" alt="DRUM KIT PREVIEW">
+      </a>
+      <a href="./Dicee Challenge - Completed/index.js">
+        <img src="images/Screenshot (26).png" alt="DICE CHALLENGE PREVIEW">
+      </a>
+      <a href="./bmi calculator/index.html">
+        <img src="./images/Screenshot (25).png" alt="BMI CALCULATOR PREVIEW">
+      </a>
+      <a href="./Lunch Payer Picker/index.html">
+        <img src="./images/Screenshot (29).png" alt="LUNCH PAYER PREVIEW">
+      </a>
+    </div>
+  </main>
+
+  <hr/>
+
+  <footer id="me">
+    <a href="./public/contact.html">Contact Me</a>
+  </footer>
+</body>
+</html>
